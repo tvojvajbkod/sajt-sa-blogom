@@ -9,11 +9,12 @@ export default function HomePage() {
     <main className="max-w-3xl mx-auto px-4 py-12">
       <section className="mb-16">
         <h1 className="text-5xl font-bold text-gray-900 mb-4 leading-tight">
-          Miloš Ludus
+          Natali Stanković
         </h1>
         <p className="text-xl text-gray-500 leading-relaxed">
-          Pišem o temama koje me zanimaju — bez čvrste strukture, samo kada
-          imam nešto da kažem.
+          Književnica koja piše knjige za decu. Ovde delim priče iza priča —
+          o pisanju, o mašti i o malim čitaocima koji me svakodnevno
+          inspirišu.
         </p>
       </section>
 

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sajt sa blogom",
-  description: "Blog sajt napravljen uz Next.js",
+  title: "Natali Stanković",
+  description: "Književnica koja piše knjige za decu",
 };
 
 export default function RootLayout({

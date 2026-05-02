@@ -1,6 +1,6 @@
 export const metadata = {
   title: "O meni",
-  description: "Nešto više o meni",
+  description: "Ko je Natali Stanković",
 };
 
 export default function OMeniPage() {
@@ -10,11 +10,12 @@ export default function OMeniPage() {
 
       <div className="prose prose-gray max-w-none">
         <p className="text-lg text-gray-600 leading-relaxed">
-          Zdravo! Ovde će uskoro biti tekst o tebi — ko si, čime se baviš,
-          zašto pišeš ovaj blog.
+          Zdravo! Ja sam Natali Stanković, književnica koja piše knjige za decu.
         </p>
-        <p className="text-gray-500 mt-4">
-          Reci mi šta želiš da napišeš i ja ću urediti ovu stranicu.
+        <p className="text-gray-600 leading-relaxed mt-4">
+          Ovde ću pisati o svom radu, o procesu stvaranja priča, o knjigama
+          koje volim i o svemu što me inspiriše. Ako imaš pitanje ili želiš da
+          se javiš, uvek si dobrodošao.
         </p>
       </div>
     </main>
