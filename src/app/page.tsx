@@ -75,7 +75,7 @@ export default function HomePage() {
       <section className="bg-primary py-10">
         <div className="mx-auto max-w-5xl px-6 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center text-white">
           <div>
-            <p className="font-display font-black text-3xl">3</p>
+            <p className="font-display font-black text-3xl">4</p>
             <p className="text-sm text-white/80 mt-1">objavljene knjige</p>
           </div>
           <div>
