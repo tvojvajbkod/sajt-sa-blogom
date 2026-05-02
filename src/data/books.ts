@@ -73,4 +73,20 @@ export const books: Book[] = [
     ],
     featured: true,
   },
+  {
+    slug: "bontoniranje",
+    title: "Bontoniranje",
+    author: "Natali Pejčić",
+    publisher: "Pi-press books",
+    isbn: "",
+    description: "17 toplih priča o đacima-prvacima Pepiki i Lazi koji uče pravila lepog ponašanja — uz smeh, greške i važne lekcije o odrastanju.",
+    synopsis: `Glavni junaci ove neobične knjige o lepom ponašanju su đaci-prvaci, Pepika i Laza, koji se svesrdno trude da savladaju brojna životna pravila i odrastu u fine i lepo vaspitane mlade ljude — da postanu „bontonirani". U 17 toplih priča, koje plene zavodljivim dečjim humorom, opisane su različite situacije, često neprijatne, ponekad smešne, u koje zapadaju Pepi i Laza na svom putu odrastanja. Bontoniranje je „doktor za probleme" koji će pomoći devojčicama i dečacima da lakše pređu iz predškolskog detinjstva u školski uzrast.`,
+    ageRange: "6–8 godina",
+    coverBg: "#fff9c4",
+    coverImage: "/books/bontoniranje.jpg",
+    tags: ["bonton", "humor", "odrastanje"],
+    buyLinks: [
+      { name: "Delfi", url: "https://delfi.rs/knjige/11296-bontoniranje-knjiga-delfi-knjizare.html" },
+    ],
+  },
 ];
