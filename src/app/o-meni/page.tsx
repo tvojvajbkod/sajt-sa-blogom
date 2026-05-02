@@ -11,13 +11,13 @@ export default function OMeniPage() {
     <main>
       <section className="bg-primary-light py-16">
         <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-12 items-center">
-          <div className="h-80 rounded-2xl overflow-hidden">
+          <div className="rounded-2xl overflow-hidden shadow-md">
             <Image
               src="/portret.jpg"
               alt="Natali Stanković"
               width={600}
-              height={320}
-              className="w-full h-full object-cover object-top"
+              height={700}
+              className="w-full h-auto"
             />
           </div>
           <div>
