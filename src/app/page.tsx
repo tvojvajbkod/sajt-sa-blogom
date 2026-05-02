@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { books } from "@/data/books";
 import BookCard from "@/components/BookCard";
 import { getAllPosts } from "@/lib/posts";
@@ -41,22 +42,31 @@ export default function HomePage() {
 
         {/* Featured book visual */}
         <div className="flex justify-center">
-          <div className="animate-float">
-            <div
-              className="w-56 h-72 rounded-2xl shadow-2xl flex flex-col items-center justify-center gap-3 relative"
-              style={{ backgroundColor: featuredBook.coverBg }}
-            >
-              <span className="text-7xl">{featuredBook.coverEmoji}</span>
-              <div className="text-center px-4">
-                <p className="font-display font-bold text-sm text-stone-700 leading-tight">
-                  {featuredBook.title}
-                </p>
-                <p className="text-xs text-stone-500 mt-1">Natali Stanković</p>
+          <div className="animate-float relative">
+            {featuredBook.coverImage ? (
+              <Image
+                src={featuredBook.coverImage}
+                alt={featuredBook.title}
+                width={224}
+                height={288}
+                className="w-56 h-72 object-cover rounded-2xl shadow-2xl"
+                priority
+              />
+            ) : (
+              <div
+                className="w-56 h-72 rounded-2xl shadow-2xl flex flex-col items-center justify-center gap-3"
+                style={{ backgroundColor: featuredBook.coverBg }}
+              >
+                <span className="text-7xl">{featuredBook.coverEmoji}</span>
+                <div className="text-center px-4">
+                  <p className="font-display font-bold text-sm text-stone-700 leading-tight">{featuredBook.title}</p>
+                  <p className="text-xs text-stone-500 mt-1">Natali Stanković</p>
+                </div>
               </div>
-              <span className="absolute -top-3 -right-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded-full shadow">
-                Novo!
-              </span>
-            </div>
+            )}
+            <span className="absolute -top-3 -right-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded-full shadow">
+              Novo!
+            </span>
           </div>
         </div>
       </section>
