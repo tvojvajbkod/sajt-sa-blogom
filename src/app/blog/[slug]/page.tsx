@@ -72,7 +72,19 @@ export default async function PostPage({ params }: Props) {
         </header>
 
         <div className="prose prose-gray max-w-none">
-          <MDXRemote source={post.content} />
+          <MDXRemote
+            source={post.content}
+            components={{
+              img: (props) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  {...props}
+                  alt={props.alt ?? ""}
+                  className="w-full rounded-2xl shadow-md my-8 object-cover"
+                />
+              ),
+            }}
+          />
         </div>
       </article>
     </main>
