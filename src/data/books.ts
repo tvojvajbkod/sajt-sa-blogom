@@ -35,7 +35,6 @@ export const books: Book[] = [
     buyLinks: [
       { name: "Vulkan", url: "https://www.knjizare-vulkan.rs/romani-i-price-za-decu-6-8/212166-fanto-to-sam-ja-knjiga-1" },
     ],
-    featured: true,
   },
   {
     slug: "fanto-se-zaljubio-knjiga-2",
@@ -72,5 +71,6 @@ export const books: Book[] = [
     buyLinks: [
       { name: "Vulkan", url: "https://www.knjizare-vulkan.rs/romani-i-price-za-decu-6-8/212176-fanto-u-svojoj-porodici-knjiga-3" },
     ],
+    featured: true,
   },
 ];
