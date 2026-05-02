@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "O autorki",
@@ -10,10 +11,14 @@ export default function OMeniPage() {
     <main>
       <section className="bg-primary-light py-16">
         <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-12 items-center">
-          <div
-            className="h-80 rounded-2xl flex items-center justify-center text-9xl bg-primary/10"
-          >
-            ✍️
+          <div className="h-80 rounded-2xl overflow-hidden">
+            <Image
+              src="/portret.jpg"
+              alt="Natali Stanković"
+              width={600}
+              height={320}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div>
             <span className="inline-block text-sm font-semibold text-primary bg-white px-3 py-1 rounded-full mb-4">
