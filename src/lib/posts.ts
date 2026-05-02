@@ -11,6 +11,7 @@ export type Post = {
   description: string;
   tags: string[];
   readingTime: number;
+  coverImage?: string;
   content: string;
 };
 
@@ -38,6 +39,7 @@ export function getAllPosts(): Omit<Post, "content">[] {
         description: data.description ?? "",
         tags: data.tags ?? [],
         readingTime: calculateReadingTime(content),
+        coverImage: data.coverImage,
       };
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -57,6 +59,7 @@ export function getPostBySlug(slug: string): Post | null {
     description: data.description ?? "",
     tags: data.tags ?? [],
     readingTime: calculateReadingTime(content),
+    coverImage: data.coverImage,
     content,
   };
 }
