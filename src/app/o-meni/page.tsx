@@ -48,7 +48,7 @@ export default function OMeniPage() {
           <p className="text-muted leading-relaxed">
             Sve što je imalo šumu u sebi. Vikingeze, Narniju, srpske narodne
             bajke, Alisu u Zemlji čuda. Knjige gde se nešto dešava kad
-            zatвориш oči i knjiga ostane otvorena.
+            zatvoriš oči i knjiga ostane otvorena.
           </p>
 
           <h2 className="font-display font-black text-2xl text-foreground mt-10">Kontakt za medije i škole</h2>
