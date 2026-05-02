@@ -36,7 +36,7 @@ export default function OMeniPage() {
 
       <section className="mx-auto max-w-3xl px-6 py-16">
         <div className="prose prose-stone max-w-none">
-          <h2 className="font-display font-black text-2xl text-foreground">Ko sam ja?</h2>
+          <h2 className="font-display font-black text-2xl text-foreground">O autorki</h2>
           <p className="text-muted leading-relaxed">
             Rođena sam u Francuskoj, školovala se u Pirotu i Vranju, a najveći deo svog radnog veka provela sam kao profesor razredne nastave u Osnovnoj školi „Dušan Radović" u Pirotu. Književnim stvaralaštvom bavim se već dvadeset godina, a moje ime uvršteno je u Antologiju savremenih srpskih pisaca za decu.
           </p>
