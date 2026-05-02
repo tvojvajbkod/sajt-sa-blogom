@@ -10,12 +10,12 @@ type Props = {
 export default function ShareButtons({ slug, title }: Props) {
   const [copied, setCopied] = useState(false);
 
-  const url =
-    typeof window !== "undefined"
-      ? `${window.location.origin}/blog/${slug}`
-      : `/blog/${slug}`;
+  function getUrl() {
+    return window.location.href;
+  }
 
   function shareOnFacebook() {
+    const url = getUrl();
     window.open(
       `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
       "_blank",
@@ -24,6 +24,7 @@ export default function ShareButtons({ slug, title }: Props) {
   }
 
   async function copyForInstagram() {
+    const url = getUrl();
     try {
       await navigator.clipboard.writeText(url);
       setCopied(true);
@@ -31,7 +32,7 @@ export default function ShareButtons({ slug, title }: Props) {
     } catch {
       // fallback za starije browsere
       const input = document.createElement("input");
-      input.value = url;
+      input.value = getUrl();
       document.body.appendChild(input);
       input.select();
       document.execCommand("copy");
