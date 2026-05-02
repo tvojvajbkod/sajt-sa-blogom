@@ -104,6 +104,72 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Od korica do medija */}
+      <section className="mx-auto max-w-5xl px-6 py-16">
+        <h2 className="font-display font-black text-3xl text-foreground mb-10">Od korica do medija</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="flex flex-col gap-3">
+            <div className="rounded-2xl overflow-hidden shadow-sm">
+              <Image
+                src="/novine%201.jpg"
+                alt="Članak u novinama Sloboda"
+                width={400}
+                height={500}
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-muted leading-relaxed">
+              List <strong className="text-foreground">Sloboda</strong> posvetio je celu stranicu serijalu Fanto, opisujući kako knjige o neobičnom psu pomažu deci da odrastu uz smeh i mudrost.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <div className="rounded-2xl overflow-hidden shadow-sm">
+              <Image
+                src="/novine%202.jpg"
+                alt="Intervju u novinama Sloboda"
+                width={400}
+                height={500}
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-muted leading-relaxed">
+              Intervju <em>Na pauzi sa...</em> u listu <strong className="text-foreground">Sloboda</strong> — Natali o svom putu od učiteljice do književnice, ljubavi prema deci i razlozima zbog kojih piše.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <div className="rounded-2xl overflow-hidden shadow-sm">
+              <Image
+                src="/sajam%20knjiga.jpg"
+                alt="Novosadski sajam knjiga"
+                width={400}
+                height={500}
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-muted leading-relaxed">
+              Knjige iz serijala Fanto na <strong className="text-foreground">Novosadskom sajmu knjiga</strong> — mesto gde čitaoci uživo upoznaju priče i junake koje vole.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <div className="rounded-2xl overflow-hidden shadow-sm">
+              <Image
+                src="/televizija.jpg"
+                alt="Televizijsko gostovanje"
+                width={400}
+                height={500}
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-muted leading-relaxed">
+              Televizijsko gostovanje povodom promocije knjige Fanto — razgovor o pisanju za decu, važnosti čitanja i avanturama jednog neobičnog psa.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* About teaser */}
       <section className="bg-secondary-light py-16">
         <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-10 items-center">
