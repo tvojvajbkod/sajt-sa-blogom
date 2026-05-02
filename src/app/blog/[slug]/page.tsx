@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
+import ShareButtons from "@/components/ShareButtons";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -128,6 +129,7 @@ export default async function PostPage({ params }: Props) {
             }}
           />
         </div>
+        <ShareButtons slug={post.slug} title={post.title} />
       </article>
     </main>
   );
