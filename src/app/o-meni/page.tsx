@@ -17,7 +17,7 @@ export default function OMeniPage() {
               alt="Natali Stanković"
               width={600}
               height={320}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </div>
           <div>

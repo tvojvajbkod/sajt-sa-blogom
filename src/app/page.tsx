@@ -107,10 +107,14 @@ export default function HomePage() {
       {/* About teaser */}
       <section className="bg-secondary-light py-16">
         <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-10 items-center">
-          <div
-            className="h-72 rounded-2xl flex items-center justify-center text-8xl bg-secondary/20"
-          >
-            ✍️
+          <div className="h-72 rounded-2xl overflow-hidden">
+            <Image
+              src="/portret.jpg"
+              alt="Natali Stanković"
+              width={600}
+              height={288}
+              className="w-full h-full object-cover object-top"
+            />
           </div>
           <div>
             <h2 className="font-display font-black text-3xl text-foreground mb-4">
